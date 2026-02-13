@@ -26,13 +26,8 @@ npm run build
 
 ## ⚙️ Personalización
 
-### 1. Número de WhatsApp
+### 1. Envio a wsp
 
-Edita `src/components/SuccessScreen.jsx` línea 6:
-
-```javascript
-const whatsappNumber = '5215512345678'; // Tu número en formato internacional
-```
 
 ### 2. Mensaje Romántico
 
