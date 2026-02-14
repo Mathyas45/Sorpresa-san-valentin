@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import usImg from '../img/us.jpg';
 
 const SuccessScreen = () => {
     const [flowers, setFlowers] = useState([]);
+    const [showPhoto, setShowPhoto] = useState(false);
 
     // WhatsApp configuration - user can customize this
     const whatsappNumber = '51931038431'; // Replace with actual number
@@ -31,7 +33,7 @@ const SuccessScreen = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-[80vh] px-6 relative overflow-hidden">
+        <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 relative overflow-hidden">
             {/* Flower rain animation */}
             {flowers.map((flower) => (
                 <motion.div
@@ -68,7 +70,7 @@ const SuccessScreen = () => {
                     damping: 15,
                     delay: 0.3
                 }}
-                className="glass p-8 rounded-3xl shadow-glow text-center z-10 max-w-md"
+                className="glass p-8 rounded-3xl shadow-glow text-center z-10 max-w-md w-full my-8"
             >
                 {/* Celebration icon */}
                 <motion.div
@@ -129,20 +131,58 @@ const SuccessScreen = () => {
                     transition={{ delay: 1.1 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-soft hover:shadow-glow transition-all duration-300"
+                    className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-soft hover:shadow-glow transition-all duration-300 mb-6"
                 >
                     <span className="text-2xl">💬</span>
                     Avísame por WhatsApp
                 </motion.a>
-                    <motion.h1
+                <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                     className="text-4xl font-display font-bold text-gradient mb-1 mt-4"
                 >
                     Te amo mucho mi bebe linda🐷
-
                 </motion.h1>
+
+                {/* New Button for Photo */}
+                <motion.button
+                    onClick={() => setShowPhoto(!showPhoto)}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1.2 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-6 bg-gradient-to-r from-romantic-red to-romantic-purple text-white px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                    Quiero verte así siempre 📸
+                </motion.button>
+
+                {/* Framed Photo */}
+                {showPhoto && (
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8, height: 0 }}
+                        animate={{ opacity: 1, scale: 1, height: 'auto' }}
+                        transition={{ type: "spring", stiffness: 100 }}
+                        className="mt-8 relative p-6 bg-white/50 rounded-lg shadow-xl"
+                    >
+                        {/* Floral Frame Decorations */}
+                        <div className="absolute top-0 left-0 -mt-3 -ml-3 text-3xl">🌸</div>
+                        <div className="absolute top-0 right-0 -mt-3 -mr-3 text-3xl">🌹</div>
+                        <div className="absolute bottom-0 left-0 -mb-3 -ml-3 text-3xl">🌺</div>
+                        <div className="absolute bottom-0 right-0 -mb-3 -mr-3 text-3xl">🌷</div>
+                        <div className="absolute top-1/2 left-0 -ml-4 -translate-y-1/2 text-2xl">🌿</div>
+                        <div className="absolute top-1/2 right-0 -mr-4 -translate-y-1/2 text-2xl">🌱</div>
+
+                        <div className="relative z-10 overflow-hidden rounded-md border-4 border-white shadow-inner">
+                            <img
+                                src={usImg}
+                                alt="Nosotros"
+                                className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+                            />
+                        </div>
+                    </motion.div>
+                )}
 
                 {/* Extra hearts */}
                 <motion.div
