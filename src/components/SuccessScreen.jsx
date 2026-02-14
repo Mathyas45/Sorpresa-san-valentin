@@ -95,15 +95,6 @@ const SuccessScreen = () => {
                 >
                     ¡Sabía que dirías que sí! 💕
                 </motion.h1>
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-4xl font-display font-bold text-gradient mb-4"
-                >
-                    Te amo mucho mi bebe linda🐷
-
-                </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0 }}
@@ -143,6 +134,16 @@ const SuccessScreen = () => {
                     <span className="text-2xl">💬</span>
                     Avísame por WhatsApp
                 </motion.a>
+
+                    <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="text-4xl font-display font-bold text-gradient mb-4"
+                >
+                    Te amo mucho mi bebe linda🐷
+
+                </motion.h1>
 
                 {/* Extra hearts */}
                 <motion.div

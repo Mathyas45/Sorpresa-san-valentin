@@ -85,7 +85,7 @@ const LetterScreen = ({ onNext }) => {
                         className="space-y-4 text-center mb-6"
                     >
                         <p className="text-gray-700 leading-relaxed font-medium">
-                            Aunque estemos lejos este 14 y todos los días, quiero esta junto con mis cachetitos.
+                            Aunque estemos lejos este 14 quiero estar junto con mis cachetitos este 14 y todos los días, .
                         </p>
                         <p className="text-gray-700 leading-relaxed">
                             Cada momento juntos, nuestras comidas, salidas e incluso nuestras peleas, hacen que todo valga la pena.
