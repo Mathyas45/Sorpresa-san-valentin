@@ -7,7 +7,7 @@ const SuccessScreen = () => {
     // WhatsApp configuration - user can customize this
     const whatsappNumber = '51931038431'; // Replace with actual number
     const whatsappMessage = encodeURIComponent(
-        '¡Hola! ¡Acepto ser tu San Valentín este 14 de febrero! 💕'
+        '¡Hola gato hermoso! ¡Acepto ser tu San Valentín este 14 de febrero! 💕 y demas estar siempre contigo, juntos siempre con los cachetitos'
     );
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -95,7 +95,7 @@ const SuccessScreen = () => {
                 >
                     ¡Sabía que dirías que sí! 💕
                 </motion.h1>
-                 <motion.h1
+                <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
