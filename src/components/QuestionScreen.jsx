@@ -54,7 +54,7 @@ const QuestionScreen = ({ onYes }) => {
                 </motion.div>
 
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-gradient mb-4">
-                    ¿Quieres ser mi San Valentín?
+                    ¿Bebita Quieres ser mi San Valentín?
                 </h2>
 
                 <p className="text-romantic-purple/80 text-lg mb-2">

@@ -31,7 +31,7 @@ const WelcomeScreen = ({ onNext }) => {
                     transition={{ duration: 1, delay: 0.5 }}
                     className="text-3xl md:text-4xl font-display font-bold text-gradient mb-4"
                 >
-                    Tengo algo que preguntarte...
+                    Tengo algo que preguntarle a mis cachetitos lindos...
                 </motion.h1>
 
                 <motion.p
@@ -40,7 +40,7 @@ const WelcomeScreen = ({ onNext }) => {
                     transition={{ duration: 1, delay: 0.8 }}
                     className="text-romantic-purple/80 text-lg mb-12 font-light"
                 >
-                    Preparé algo especial para ti
+                    Preparé algo especial para mi pequeñita
                 </motion.p>
 
                 {/* Open button */}

@@ -29,7 +29,7 @@ const LetterScreen = ({ onNext }) => {
                         <div className="text-center">
                             <div className="text-6xl mb-4">💌</div>
                             <p className="text-romantic-purple font-display font-semibold">
-                                Para mi Cuya 💕
+                                Para mi Cuya y los cachetitos (abre la carta) 💕
                             </p>
                         </div>
                     </motion.div>
@@ -85,7 +85,7 @@ const LetterScreen = ({ onNext }) => {
                         className="space-y-4 text-center mb-6"
                     >
                         <p className="text-gray-700 leading-relaxed font-medium">
-                            Aunque estemos lejos el 14 y todos los días, quiero pasarla con mis cachetitos.
+                            Aunque estemos lejos este 14 y todos los días, quiero esta junto con mis cachetitos.
                         </p>
                         <p className="text-gray-700 leading-relaxed">
                             Cada momento juntos, nuestras comidas, salidas e incluso nuestras peleas, hacen que todo valga la pena.
